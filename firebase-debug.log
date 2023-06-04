@@ -1,0 +1,67 @@
+[debug] [2023-06-04T11:20:39.751Z] ----------------------------------------------------------------------
+[debug] [2023-06-04T11:20:39.755Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Shanr\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-06-04T11:20:39.756Z] CLI Version:   12.3.0
+[debug] [2023-06-04T11:20:39.756Z] Platform:      win32
+[debug] [2023-06-04T11:20:39.757Z] Node Version:  v18.14.2
+[debug] [2023-06-04T11:20:39.758Z] Time:          Sun Jun 04 2023 16:50:39 GMT+0530 (India Standard Time)
+[debug] [2023-06-04T11:20:39.758Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-04T11:20:39.857Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-04T11:20:39.857Z] > authorizing via signed-in user (shanrastogi2214@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\firebase project\contact-form
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-06-04T11:20:45.543Z] Using project from CLI flag: fir-contact-bd86a
+[debug] [2023-06-04T11:20:45.546Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fir-contact-bd86a [none]
+[debug] [2023-06-04T11:20:46.563Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fir-contact-bd86a 200
+[debug] [2023-06-04T11:20:46.563Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fir-contact-bd86a {"projectId":"fir-contact-bd86a","projectNumber":"815131713918","displayName":"firebase-contact","name":"projects/fir-contact-bd86a","resources":{"hostingSite":"fir-contact-bd86a","realtimeDatabaseInstance":"fir-contact-bd86a-default-rtdb"},"state":"ACTIVE","etag":"1_bafb4943-64cb-44cd-a3dc-cd887f23579f"}
+[info] i  Using project fir-contact-bd86a (firebase-contact) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-06-04T11:20:46.574Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/fir-contact-bd86a/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-06-04T11:20:46.574Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/fir-contact-bd86a/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/fir-contact-bd86a
+[debug] [2023-06-04T11:20:49.429Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/fir-contact-bd86a/services/firebasedatabase.googleapis.com 200
+[debug] [2023-06-04T11:20:49.429Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/fir-contact-bd86a/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-06-04T11:20:49.432Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/fir-contact-bd86a/locations/-/instances/fir-contact-bd86a-default-rtdb [none]
+[debug] [2023-06-04T11:20:51.162Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/fir-contact-bd86a/locations/-/instances/fir-contact-bd86a-default-rtdb 200
+[debug] [2023-06-04T11:20:51.162Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/fir-contact-bd86a/locations/-/instances/fir-contact-bd86a-default-rtdb {"name":"projects/815131713918/locations/us-central1/instances/fir-contact-bd86a-default-rtdb","project":"projects/815131713918","databaseUrl":"https://fir-contact-bd86a-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2023-06-04T11:21:04.628Z] >>> [apiv2][query] GET https://fir-contact-bd86a-default-rtdb.firebaseio.com/.settings/rules.json [none]
+[debug] [2023-06-04T11:21:06.018Z] <<< [apiv2][status] GET https://fir-contact-bd86a-default-rtdb.firebaseio.com/.settings/rules.json 200
+[debug] [2023-06-04T11:21:06.018Z] <<< [apiv2][body] GET https://fir-contact-bd86a-default-rtdb.firebaseio.com/.settings/rules.json [stream]
+[debug] [2023-06-04T11:21:06.517Z] Error: EISDIR: illegal operation on a directory, open 'E:\firebase project\contact-form\build'
+    at Object.openSync (node:fs:600:3)
+    at Object.writeFileSync (node:fs:2221:35)
+    at Object.createFileSync (C:\Users\Shanr\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\ensure\file.js:63:6)
+    at Config.writeProjectFile (C:\Users\Shanr\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:152:12)
+    at writeDBRules (C:\Users\Shanr\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\database.js:33:12)
+    at doSetup (C:\Users\Shanr\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\database.js:123:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async init (C:\Users\Shanr\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:37:9)
+[error] 
+[error] Error: An unexpected error has occurred.
